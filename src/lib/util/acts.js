@@ -8,11 +8,10 @@ const base = {
 }
 
 export function add(notification) {
-	notification = {
-		...base,
-		...notification,
-		id: `tadashi_svelte_notification_${hexID()}`,
-	}
+	Object.keys(base).forEach(key => {
+		notification[key] ??= base[key];
+	})
+	notification.id = `tadashi_svelte_notification_${hexID()}`;
 	store.update(n => {
 		n.add(notification)
 		return n
