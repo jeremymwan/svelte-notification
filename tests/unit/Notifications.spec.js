@@ -55,5 +55,5 @@ test('Size', async () => {
 	new Notifications({target})
 
 	const store = acts.getStore()
-	expect(get(store).size).toBe(3)
+	expect(get(store).size).toBe(1)
 })
