@@ -9,9 +9,9 @@ const base = {
 
 export function add(notification) {
 	Object.keys(base).forEach(key => {
-		notification[key] ??= base[key];
+		notification[key] ??= base[key]
 	})
-	notification.id = `tadashi_svelte_notification_${hexID()}`;
+	notification.id = `tadashi_svelte_notification_${hexID()}`
 	store.update(n => {
 		n.add(notification)
 		return n

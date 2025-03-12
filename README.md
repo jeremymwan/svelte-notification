@@ -18,7 +18,7 @@ Svelte component
 ## Install
 
 ```
-$ npm i -S @tadashi/svelte-notification
+$ npm i -S @jeremymwan/svelte-notification
 ```
 
 ## API
